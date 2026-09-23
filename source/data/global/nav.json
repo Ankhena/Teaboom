@@ -1,0 +1,32 @@
+[
+  {
+    "class": "tt",
+    "link": "lll",
+    "title": "title",
+    "hasSubmenu": true,
+    "submenu": [
+      {
+        "class": "s-tt",
+        "link": "s-lll",
+        "title": "s-title"
+      }
+    ]
+  },
+  {
+    "class": "tt",
+    "link": "lll",
+    "title": "title",
+    "submenu": [
+      {
+        "class": "s-tt",
+        "link": "s-lll",
+        "title": "s-title"
+      }
+    ]
+  },
+  {
+    "class": "tt",
+    "link": "lll",
+    "title": "title"
+  }
+]

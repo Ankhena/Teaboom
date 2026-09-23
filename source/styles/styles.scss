@@ -1,0 +1,15 @@
+/* GLOBAL */
+@use "global/fonts";
+@use "global/root";
+@use "global/root-icons";
+@use "global/global";
+
+/* BLOCKS */
+@use "blocks/visually-hidden";
+@use "blocks/container";
+@use "blocks/page";
+@use "blocks/header";
+@use "blocks/footer";
+@use "blocks/logo";
+@use "blocks/btn";
+@use "blocks/product";

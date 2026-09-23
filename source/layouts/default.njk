@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="{{ global.language }}">
+<head>
+  {% include "./global/head.njk" %}
+  <title>{{ pageTitle or global.title | escape }}</title>
+</head>
+
+<body>
+
+<div class="page">
+
+  {% include "./global/header.njk" %}
+
+  <div class="page__wrapper container">
+
+    <main class="page__main">
+
+      {% block main %}
+      {% endblock %}
+
+    </main>
+
+    <nav class="nav">
+      <p>КАТЕГОРИИ</p>
+      <ul>
+        <li><a href="#">Подарки</a></li>
+        <li><a href="#">Матча</a></li>
+        <li><a href="#">Черный чай</a></li>
+        <li><a href="#">Чай зелёный с черным ароматизированный</a></li>
+        <li><a href="#">Зеленый чай</a></li>
+        <li><a href="#">Красный чай</a></li>
+        <li><a href="#">Белый чай</a></li>
+        <li><a href="#">Желтый чай</a></li>
+        <li><a href="#">Улун</a></li>
+        <li><a href="#">Пуэр</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  {% include "./global/footer.njk" %}
+
+</div>
+
+
+{% include "./global/scripts.njk" %}
+
+</body>
+</html>

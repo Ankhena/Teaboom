@@ -1,0 +1,105 @@
+@use "variables";
+@use "mixins";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+*:focus,
+*:active {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+::selection {
+  background: var(--color-selection);
+}
+
+:target {
+  scroll-margin-top: 100px;
+}
+
+html {
+  /* stylelint-disable */
+  // сглаживание оттенками серого
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* stylelint-enable */
+  text-rendering: optimizeLegibility;
+  text-size-adjust: 100%;
+
+  @media (prefers-reduced-motion: no-preference) {
+    scroll-behavior: smooth;
+  }
+}
+
+body {
+  margin: 0;
+  font-size: mixins.clampvw(14, 16);
+  font-weight: var(--main-font-weight, 400);
+  line-height: 1.7;
+  font-family: var(--font-main, Arial);
+  background: var(--color-bg, #ffffff) url("https://teaboom.ru/static/assets/images/transp_patttern.png") repeat top center;
+  color: var(--color);
+}
+
+h1 {
+  margin: 0;
+  font-size: mixins.clampvw(24, 32);
+  font-weight: 700;
+  line-height: 1.2;
+  color: #202020;
+}
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 0.78em;
+  font-size: mixins.clampvw(16, 22);
+  font-weight: 700;
+  line-height: 1.09;
+}
+
+h3 {
+  font-size: mixins.clampvw(14, 18);
+}
+
+a {
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+  color: inherit;
+
+  &:hover {
+    color: #0056b3;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+:where(strong, b) {
+  font-weight: var(--bold-fw, 700);
+}
+
+:where(picture, source) {
+  display: contents;
+}
+
+:where(figure) {
+  margin: 0;
+}
+
+:where(address) {
+  font-style: normal;
+}
+
+button {
+  font-stretch: inherit;
+  font-variation-settings: inherit;
+}
+
+:where([data-fancybox]) {
+  cursor: pointer;
+}

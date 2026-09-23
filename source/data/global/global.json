@@ -1,0 +1,27 @@
+{
+  "title": "Купить Ананасовый улун в Москве по доступной цене — интернет-магазин «Чайный Бум»",
+  "url": "https://my-site.ru/",
+  "language": "ru",
+  "description": "",
+  "startDate": "2025",
+  "author": {
+    "name": "Имя автора",
+    "tg": "name",
+    "tgNick": "name",
+    "whatsapp": "79111111111",
+    "email": "mail@list.ru",
+    "url": "https://mysite.ru",
+    "schedule": "Пн. – Пт.: с 9:00 до 18:00",
+    "address": "<span>Санкт-Петербург,</span> ул.&nbsp;Улица, д.1",
+    "phones": [
+      "+7 (812) 000 00 00",
+      "+7 (812) 000 00 00"
+    ]
+  },
+  "themeColor": "#e7f0c1",
+  "preloadFonts": [
+    "OpenSans-Regular.woff2",
+    "OpenSans-SemiBold.woff2",
+    "OpenSans-Bold.woff2"
+  ]
+}

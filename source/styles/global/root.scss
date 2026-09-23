@@ -1,0 +1,15 @@
+@use "variables";
+@use "mixins";
+
+:root {
+  --font-main: "Open Sans", "Arial", sans-serif;
+
+  --bold-fw: 700;
+
+  --accent-1: #e7f0c1;
+  --accent-2: #ff0000;
+
+  --color-bg: #fbfbfb;
+  --color: #444444;
+  --color-selection: var(--accent-1);
+}

@@ -1,0 +1,9 @@
+@mixin visually-hidden {
+  position: fixed;
+  transform: scale(0);
+  color: inherit; // чтобы сохранить параметры контраста для доступности
+}
+
+.visually-hidden {
+  @include visually-hidden;
+}

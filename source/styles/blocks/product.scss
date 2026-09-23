@@ -1,0 +1,133 @@
+@use "../global/mixins";
+
+.product {
+  display: grid;
+  gap: 50px;
+
+  @include mixins.media(md) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.product__title {
+  grid-column: 1/-1;
+}
+
+.product__image-link {
+  display: grid;
+  border: 1px solid #dcdcdc;
+
+  &::after {
+    content: "";
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+    justify-self: end;
+    width: 2em;
+    aspect-ratio: 1;
+    background: #f4f5f6 var(--icon-zoom-in) no-repeat center / 1.5em;
+  }
+
+  img {
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+  }
+}
+
+.product__params {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto 1fr;
+  gap: 20px;
+}
+
+.product__configuration {
+  grid-column: 1/-1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.product__variants {
+  margin-bottom: 30px;
+}
+
+.product__variant {
+  padding: 5px 10px;
+  font-size: 14px;
+  background: #f4f5f6;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.product__variant--active {
+  background: var(--accent-1);
+}
+
+.product__price-new {
+  font-size: 18px;
+  color: var(--accent-2);
+}
+
+.product__price-old {
+  font-size: 12px;
+}
+
+.product__leave-feedback {
+  place-self: start;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 0.4em;
+  font-size: 0.8em;
+  color: inherit;
+  text-decoration-line: none;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 1em;
+    aspect-ratio: 1;
+    mask: var(--icon-feedback) no-repeat center / contain;
+    background: currentColor;
+  }
+}
+
+.product__favorite {
+  @include mixins.media(elg) {
+    justify-self: end;
+  }
+}
+
+.product__sku {
+  margin: 0;
+  font-size: 12px;
+  color: #808080;
+}
+
+.product__stock {
+  margin: 0;
+  font-size: 12px;
+  color: #808080;
+}
+
+.product__price {
+  margin: 0;
+  line-height: 1;
+}
+
+.product__to-cart {
+  place-self: start;
+  margin-top: auto;
+}
+
+.product__composition {
+  font-size: 0.9em;
+}
+
+.product__description {
+  grid-column: 1/-1;
+  // font-size: 14px;
+}
