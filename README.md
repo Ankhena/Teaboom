@@ -1,10 +1,10 @@
-# Сборка
+# Сборка для быстрых проектов
 
 Сборка работает на gulp 4 версии
 
 ## Начало
 
-Версия Node.js 22.15.1
+Версия Node.js 22+
 
 ## Установка
 
@@ -13,11 +13,13 @@
 ```shell
 git clone git@path-to-repo.git
 ```
+
 2. Установите зависимости проекта:
 
 ```shell
 npm ci
 ```
+
 3. Начните работу (должен запуститься браузер):
 
 ```shell
@@ -108,7 +110,6 @@ npm start
 Также к каждой страницы можно создать свой файл в папке `data/pages`. Имя файла должно совпадать с именем страницы.
 Например, для `catalog.html`, нужно создать `catalog.json` и положить его в `data/pages`.
 
-
 ```json
 // source/data/global/social.json
 [
@@ -126,6 +127,7 @@ npm start
 ```
 
 Используем в шаблоне `source/layouts/blocks/social.njk`
+
 ```njk
 <ul class="social">
   {% for item in social %}
@@ -138,7 +140,6 @@ npm start
 </ul>
 
 ```
-
 
 ## Работа со стилями
 
